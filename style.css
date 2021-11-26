@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+header{ /*intestazione e navbar*/
+    height: 200px;
+    background-color: green;
+    width: 100%;
+}
+
+.container-main{
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+
+.sidebar{
+    background-color: blue;
+    float: left;
+    width: 25%;
+}
+
+.content{
+    background-color: red;
+    width: 40%;
+    float: left;
+    margin: 0% 5%;
+}
+
+footer{ /*footer della pagina*/
+    width: 100%;
+    height: 100px;
+    background-color: purple;
+}
+
+/* Inizio prima soluzione clearfix */
+.clearfix{
+    clear: both;
+}
+/* Fine prima soluzione clearfix */
+
+/* Inizio seconda soluzione clearfix */
+.container-main:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Fine seconda soluzione clearfix */
+
+
+
+
+
+
+
